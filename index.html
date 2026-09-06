@@ -390,7 +390,7 @@
   }
   .hex-scene{
     position:relative;
-    width:250px;height:220px;
+    width:220px;height:250px;
     transform-style:preserve-3d;
     animation:hexFloat 6s ease-in-out infinite;
   }
@@ -401,7 +401,7 @@
   .hex-face{
     position:absolute;
     left:15px;right:15px;top:15px;bottom:15px;
-    clip-path:polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%);
+    clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
   .hex-back{
     background:linear-gradient(160deg, var(--blue-700) 0%, var(--navy-900) 100%);
@@ -1173,7 +1173,7 @@
   // =====================================================================
   // LIVE ROBLOX STATS — configure these two lines once your worker is live
   // =====================================================================
-  const ZERAMON_PLACE_ID = "0000000000"; // <-- your Roblox place ID (from the game URL)
+  const ZERAMON_PLACE_ID = "2753915549"; // <-- your Roblox place ID (from the game URL)
   const STATS_WORKER_URL = "https://zeramon-stats.YOUR-SUBDOMAIN.workers.dev"; // <-- your deployed worker URL
 
   async function loadLiveStats(){
